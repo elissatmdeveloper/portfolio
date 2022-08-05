@@ -60,7 +60,7 @@ body {
 	letter-spacing: 15px;
 	color: white;
 	text-shadow: 0.1em 0.1em 0.2em black;
-	animation-duration: 5s;
+	animation-duration: 3s;
 	animation-name: fadein;
 }
 
@@ -70,8 +70,8 @@ body {
 	letter-spacing: 15px;
 	color: white;
 	text-shadow: 0.1em 0.1em 0.1em black;
-	animation-duration: 5s;
-	animation-name: slideinL;
+	animation-duration: 3s;
+	animation-name: fadein;
 }
 
 
@@ -105,27 +105,26 @@ body {
 	padding-left: 40px;
 }
 
+/*Gallery Collage Bootstrap*/
+.my-grid {
+	background-color: black;
+	border-radius: 5px;
+}
+
+.proyectos a {
+	text-decoration: none;
+}
+
 .proyectos .article {
-	padding-top: 25px;
+	color: white;
 }
 
-.proyectos .article .imagen {
-	overflow: hidden;
-	box-shadow: 0.2em 0.2em 0.5em 0.1em rgb(40, 40, 40);
-	border-radius: 2px;
-}
-
-.proyectos .article .img {
-	height: 300px;
-}
-
-.proyectos .article .img:hover {
-	transform: scale(150%);
+.proyectos .article:hover {
+	filter: brightness(70%);
 }
 
 .proyectos .h2 {
 	font-size: 15px;
-	padding-top: 15px;
 	letter-spacing: 5px;
 }
 
@@ -244,7 +243,7 @@ body {
 		margin-top: -3px;
 		height: 40px;
 		width: 60px;
-		box-shadow: inset -0.1em -0.1em 0.5em 0.1em rgb(143, 143, 143);
+		box-shadow: none;
 	}
 	
 	.header .navbar-nav {
