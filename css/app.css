@@ -112,11 +112,6 @@ body {
 }
 
 /*Gallery Collage Bootstrap*/
-.proyectos .my-grid {
-	background-color: black;
-	border-radius: 5px;
-}
-
 .proyectos a {
 	text-decoration: none;
 }
