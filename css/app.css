@@ -144,6 +144,7 @@ body {
 .about .my-grid .imagen {
 	box-shadow: 0.2em 0.2em 0.5em 0.1em rgb(40, 40, 40);
 	max-width: 250px;
+	border: solid 2px white;
 }
 
 .about .skills {
