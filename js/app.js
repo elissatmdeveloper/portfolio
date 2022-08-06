@@ -1,18 +1,18 @@
 $(document).ready(function() {
   
-    var btn = $('#goUp');
-  
-    $(window).scroll(function() {
-      if ($(window).scrollTop() > 300) {
-        btn.addClass('show');
+  var goUp = $('#goUp');
+
+  $(window).scroll(function() {
+      if ($(window).scrollTop() < 200) {
+        goUp.addClass('show');
       } else {
-        btn.removeClass('show');
+        goUp.removeClass('show');
       }
-    });
-  
-    btn.on('click', function(e) {
-      e.preventDefault();
-      $('html, body').animate({scrollTop:0}, '300');
-    });
-  
   });
+
+  goUp.on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({scrollTop:0}, '1000');
+  });
+
+}); 
