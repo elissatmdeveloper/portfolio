@@ -162,19 +162,19 @@ a {
 	top: 0;
 	left: 0;
 	bottom: 0;
+	cursor: pointer;
 	z-index: 1;
+	transition: all 1s;
 }
 .about .my-grid .imagen:hover .img:last-child {
-	z-index: -1;
+	transition: all 1s;
+	opacity: 0;
 }
 .about .text {
 	padding-left: 3em;
 }
 
 /*SKILLS PopUp*/
-.about .skills {
-
-}
 .about .icons {
 	cursor: pointer;
 	position: relative;
@@ -263,7 +263,7 @@ a {
 	color: #fff;
 }
 
-.show {
+.showgoup {
 	transition: background-color .3s, 
     opacity .5s, visibility .5s;
 	opacity: 0;

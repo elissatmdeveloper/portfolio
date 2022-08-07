@@ -4,9 +4,9 @@ $(document).ready(function() {
 
     $(window).scroll(function() {
         if ($(window).scrollTop() < 200) {
-            goUp.addClass('show');
+            goUp.addClass('showgoup');
         } else {
-            goUp.removeClass('show');
+            goUp.removeClass('showgoup');
         }
     });
 
