@@ -24,7 +24,6 @@ body {
 
 .icons {
 	padding: 10px;
-	overflow: hidden;
 }
 .icons .img {
 	max-height: 40px;
@@ -48,7 +47,7 @@ a {
 
 /*HEADER */
 .header {
-  	background-color: #f5f5f5;
+	background-color: #f5f5f5;
 	box-shadow: 0em 0em 0.5em 0.1em #282828;
 	width: 100%;
 	position: fixed;
@@ -131,10 +130,10 @@ a {
 	filter: opacity(0.5);
 }
 .proyectos .h2 {
-  	background-color: #4ddb00;
+	background-color: #4ddb00;
 	font-size: 18px;
 	letter-spacing: 5px;
-  	color: black;
+	color: black;
 }
 
 
@@ -168,40 +167,31 @@ a {
 }
 
 /*PopUp*/
-.about .skills .img {
+.about .group-pop .img {
 	cursor: pointer;
-	transition: all .3s ease;
 }
-.about .popup {
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
-}
-.about .skills .img:hover {
-  	background: rgba(#f6f6f6, .3);
-}
-.about .skills .img:hover > .popup {
-  
-	/*
+.group-pop:hover > .popup{
 	opacity: 1;
-	width: 200px;
-	height: 200px;
-	z-index: 222222;
-	*/
+	width: 100%;
+	height: 100%;
+	transition: opacity 1.0s ease;
 }
-.popup {
+.group-pop .popup {
+	position: relative;
+	z-index: 5;
 	opacity: 0;
 	width: 0;
 	height: 0;
 	background: #ffffff;
-	border-radius: 100%;
-	z-index: -1;
-	margin: auto;
-	transition: all .3s ease;
+	border-radius: 2px;
+	box-shadow: 0.1em 0.1em 0.3em 0.1em #282828;
+	transition: opacity 1s, width 1.5s, height 2s;
+
+}
+.popup > p {
 	color: #353535;
 	font-size: 20px;
 }
-
 
 
 /*CONTACT*/
@@ -218,9 +208,7 @@ a {
 .contacto .email:hover {
 	color: white;
 }
-.contacto .rrss {
-	margin: 10px;
-}
+
 .contacto .rrss .img:hover {
 	animation: bote 0.3s;
 	animation-direction: alternate;
