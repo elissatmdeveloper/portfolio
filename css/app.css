@@ -94,7 +94,7 @@ a {
 
 /*SECCION*/
 .seccion {
-	padding: 80px 25px;
+	padding: 80px;
 	border-bottom: solid 1px rgb(228, 228, 228);
 	border-top: solid 1px rgb(228, 228, 228);
 }
@@ -103,28 +103,31 @@ a {
 	padding-left: 40px;
 	letter-spacing: 5px;
 }
+.seccion .h1 {
+	padding-bottom: 5px;
+}
 
 
 /*PROYECTOS*/
-.proyectos .p {
-	padding-left: 40px;
-}
-
 /*Gallery Bootstrap*/
 .proyectos .article {
-	background-color: red;
-	border: solid 8px white;
-	border-radius: 5px;
-	box-shadow: 0.1em 0.1em 0.3em 0.1em rgb(0, 0, 0, 0.2);
-	overflow-y: hidden;
+	background-color: white;
+	padding: 5px;
+	border: solid 1px rgb(228, 228, 228);
+
+}
+.proyectos .article:hover {
+	cursor: pointer;
+	border: solid 2px rgb(168, 16, 16);
+
 }
 .proyectos .imagen {
-	background-color: rgb(211, 211, 211);
+	background-color: rgb(228, 228, 228);
 	border-radius: 5px;
-	height: 60%;
 }
 .proyectos .info {
 	background-color: white;
+
 }
 .proyectos .h2 {
 	font-size: 16px;
@@ -165,11 +168,10 @@ a {
 	opacity: 0;
 }
 .about .text {
-	padding-left: 3em;
+	padding-left: 55px;
 }
 
 /*SKILLS PopUp*/
-
 .about .icons {
 	cursor: pointer;
 	position: relative;
@@ -320,8 +322,7 @@ a {
 		margin-left: 0;
 	}
 	.about .text {
-		padding-left: 15px;
-		padding-top: 25px;
+		padding-left: 0px;
 	}
 	.about .group-pop:hover img {
 		transform: scale(5);
