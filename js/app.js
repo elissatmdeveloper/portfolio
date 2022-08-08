@@ -4,10 +4,10 @@ $(document).ready(function() {
     let header = $('#header');
 
     $(window).scroll(function() {
-        if ($(window).scrollTop() < 200) {
-            goUp.addClass('showGoUp');
-        } else {
+        if ($(window).scrollTop() > 200) {
             goUp.removeClass('showGoUp');
+        } else {
+            goUp.addClass('showGoUp');
         }
         if ($(window).scrollTop() > 50) {
             header.addClass('showBG');
