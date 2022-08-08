@@ -1,12 +1,18 @@
 $(document).ready(function() {
   
-    var goUp = $('#goUp');
+    let goUp = $('#goUp');
+    let header = $('#header');
 
     $(window).scroll(function() {
         if ($(window).scrollTop() < 200) {
             goUp.addClass('showGoUp');
         } else {
             goUp.removeClass('showGoUp');
+        }
+        if ($(window).scrollTop() > 50) {
+            header.addClass('showBG');
+        } else {
+            header.removeClass('showBG');
         }
     });
 

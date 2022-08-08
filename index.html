@@ -32,7 +32,7 @@
 
 <body>
 	<div class="container-fluid">
-		<header class="header row align-items-center justify-content-between">
+		<header class="header row align-items-center" id="header">
 			<nav class="navbar navbar-expand-md">
 				<div class="logo">
 					<a href="#inicio" title="logo">
@@ -42,7 +42,7 @@
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<div class="collapse navbar-collapse" id="navbarText">
+				<div class="collapse navbar-collapse justify-content-end" id="navbarText">
 					<ul class="navbar-nav text-end">
 						<li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
 						<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
@@ -62,9 +62,8 @@
 			</section>
 
 			<section class="seccion proyectos" id="proyectos">
-				<div class="circulo"></div>
-				<h1 class="h1">Proyectos</h1>
-				<p class="p">Biblioteca de proyectos realizados.</p>
+				<h1 class="h1 text-center">Proyectos</h1>
+				<p class="p text-center">Biblioteca de proyectos realizados.</p>
 
 				<!--Gallery Bootstrap-->
 				<div class="mygrid row justify-content-center">
@@ -105,54 +104,9 @@
 					</article>
 				</div>
 
-
-
-
-				<!--
-				Gallery Collage Bootstrap
-				<div class="my-grid row g-0">
-					<article class="article col-12 row g-0 mb-0 p-1">
-						<div class="imagen col-12 col-md-5 col-lg-4 mb-0 border border-white border-2 order-2">
-						<a href="#" title="Proyecto1">
-							<img src="assets/pr-secret.png" alt="Imagen" class="img w-100" loading="lazy">
-						</a>
-						</div>
-						<div class="col-12 col-md-7 col-lg-8 row g-0 order-1">
-							<h2 class="h2 col-12 mb-0 p-3 border border-white border-2 d-flex align-items-center justify-content-center"> Proyecto 1</h2>
-							<p class="p2 col-12 mb-0 p-3 border border-white border-2 d-flex align-items-center"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus neque a, hic quis delectus eos?</p>
-						</div>
-					</article>
-							
-					<article class="article col-12 row g-0 mb-0 p-1">
-						<div class="imagen col-12 col-md-6 col-lg-5 mb-0 border border-white border-2 order-2 order-md-1">
-						<a href="#" title="Proyecto2">
-							<img src="assets/pr-agricola.png" alt="Imagen" class="img w-100" loading="lazy">
-						</a>
-						</div>
-						<div class="col-12 col-md-6 col-lg-7 row g-0 order-1 order-md-2">
-							<h2 class="h2 col-12 mb-0 p-3 border border-white border-2 d-flex align-items-center justify-content-center"> Proyecto 2</h2>
-							<p class="p2 col-12 mb-0 p-3 border border-white border-2 d-flex align-items-center"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus neque a, hic quis delectus eos?</p>
-						</div>
-					</article>
-
-					<article class="article col-12 row g-0 mb-0 p-1">
-						<div class="imagen col-12 col-md-7 col-lg-6 mb-0 border border-white border-2 order-2">
-						<a href="#" title="Proyecto3">
-							<img src="assets/pr-pokemon.png" alt="Imagen" class="img w-100" loading="lazy">
-						</a>
-						</div>
-						<div class="col-12 col-md-5 col-lg-6 row g-0 order-1">
-							<h2 class="h2 col-12 mb-0 p-3 border border-white border-2 d-flex align-items-center justify-content-center"> Proyecto 3</h2>
-							<p class="p2 col-12 mb-0 p-3 border border-white border-2 d-flex align-items-center"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus neque a, hic quis delectus eos?</p>
-						</div>
-					</article>
-				</div>
-				-->
-
 			</section>
 
 			<section class="seccion about" id="about">
-				<div class="circulo"></div>
 				<h1 class="h1">About</h1>
 				<div class="my-grid row g-0 justify-content-center align-items-center">
 					<div class="imagen col-12 col-sm-4">
@@ -229,7 +183,6 @@
 			</section>
 
 			<section class="seccion contacto" id="contacto">
-				<div class="circulo"></div>
 				<h1 class="h1">Contacto</h1>
 				<div class="form p-4">
 					<div class="mb-3">

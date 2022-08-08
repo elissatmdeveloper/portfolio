@@ -9,19 +9,6 @@ body {
 	color: black;
 }
 
-.circulo {
-	width: 30px;
-	height: 30px;
-	border-radius: 100px;
-	background-color: rgb(245, 24, 24);
-	box-shadow: inset -0.3em -0.3em 0.7em 0.2em rgb(59, 6, 6);
-	float: left;
-}
-.contacto .circulo {
-	background-color: rgb(211, 211, 211);
-	box-shadow: inset -0.3em -0.3em 0.7em 0.2em rgb(40, 40, 40);
-}
-
 .icons .img {
 	width: 40px;
 	height: 40px;
@@ -32,7 +19,7 @@ body {
 	position: relative;
 	z-index: 1;
 	transition: all 1s;
-	box-shadow: 0.1em 0.1em 0.3em 0.1em rgb(40, 40, 40);
+	box-shadow: 0.1em 0.1em 0.2em 0.05em rgb(0, 0, 0, 0.85);
 }
 
 a {
@@ -50,11 +37,17 @@ a {
 	border-bottom: solid 1px rgb(228, 228, 228, 0.65);
 	width: 100%;
 	position: fixed;
+	height: 70px;
+	transition: all 0.5s;
 	z-index: 90;
+}
+.showBG {
+	box-shadow: 0.1em 0.1em 0.3em 0.1em rgb(0, 0, 0, 0.4);
+	background-color: rgb(245, 245, 245);
 }
 .header .logo .img-logo {
 	width: 40px;
-	margin-left: 15px;
+	margin-left: 55px;
 }
 .header .navbar {
 	background-color: transparent;
@@ -62,12 +55,14 @@ a {
 }
 .header .nav-item {
 	padding-right: 15px;
+	padding-left: 15px;
 }
 .header .nav-item a {
 	font-family: 'Sarpanch', sans-serif;
-	letter-spacing: 5px;
-	font-size: 12px;
+	font-size: 16px;
+	font-weight: 600;
 	text-transform: uppercase;
+	color: rgb(60, 60, 60);
 }
 
 
@@ -120,59 +115,30 @@ a {
 	background-color: red;
 	border: solid 8px white;
 	border-radius: 5px;
-	box-shadow: 0.1em 0.1em 0.3em 0.1em rgb(211, 211, 211);
+	box-shadow: 0.1em 0.1em 0.3em 0.1em rgb(0, 0, 0, 0.2);
 	overflow-y: hidden;
 }
-
 .proyectos .imagen {
 	background-color: rgb(211, 211, 211);
 	border-radius: 5px;
 	height: 60%;
 }
-
 .proyectos .info {
 	background-color: white;
 }
-
 .proyectos .h2 {
 	font-size: 16px;
 	color: black;
 }
-
 .proyectos .p2 {
 	font-size: 14px;
 	color: rgb(60, 60, 60);
 }
 
-/*
-Gallery Collage Bootstrap
-.proyectos .my-grid {
-	box-shadow: inset 0 0 0 6px white;
-	border-radius: 2px;
-}
-.proyectos .article {
-	background-color: black;
-	color: white;
-}
-.proyectos .article .img {
-	transition: all 0.3s;
-}
-.proyectos .article .img:hover {
-	filter: opacity(0.65);
-	transition: all 0.3s;
-}
-.proyectos .h2 {
-	background-color: rgb(77, 219, 0);
-	font-size: 18px;
-	letter-spacing: 5px;
-	color: black;
-}
-*/
-
 
 /*ABOUT*/
 .about .my-grid .imagen .img {
-	box-shadow: 0.2em 0.2em 0.5em 0.1em rgb(40, 40, 40);
+	box-shadow: 0.2em 0.2em 0.3em 0.1em rgb(0, 0, 0, 0.85);
 	border: solid 2px white;
 	margin: 15px;
 }
@@ -277,8 +243,8 @@ Gallery Collage Bootstrap
 	position: fixed;
 	bottom: 10px;
 	right: 10px;
-	transition: background-color .3s, 
-	opacity .5s, visibility .5s;
+	transition: background-color 0.3s, 
+	opacity 0.5s, visibility 0.5s;
 	z-index: 80;
 }
 #goUp:hover {
@@ -286,7 +252,7 @@ Gallery Collage Bootstrap
 	background-color: rgb(60, 60, 60);
 }
 #goUp:active {
-  	background-color: rgb(80, 80, 80);
+	background-color: rgb(80, 80, 80);
 }
 #goUp::after {
 	content: "\f077";
@@ -297,7 +263,6 @@ Gallery Collage Bootstrap
 	line-height: 40px;
 	color: white;
 }
-
 .showGoUp {
 	transition: background-color 0.3s, 
     opacity 0.5s, visibility 0.5s;
@@ -366,9 +331,6 @@ Gallery Collage Bootstrap
 @media screen and (max-width: 768px) {
 	.header .navbar-toggler {
 		border: none;
-		margin-top: -3px;
-		height: 40px;
-		width: 60px;
 		box-shadow: none;
 	}
 	.header .navbar-nav {
@@ -376,12 +338,10 @@ Gallery Collage Bootstrap
 	}
 	.header .nav-item:hover {
 		background-color: rgb(168, 16, 16);
-		box-shadow: inset -0.1em -0.1em 0.5em 0.1em rgb(59, 6, 6);
-		padding: 0px;	
+		box-shadow: inset -0.1em -0.1em 0.5em 0.05em rgb(0, 0, 0, 0.85);
 		margin: 0;
 	}
 	.header .nav-link:hover {
 		color: white;
-		padding-right: 15px;
 	}
 }
