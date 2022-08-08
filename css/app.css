@@ -47,23 +47,21 @@ a {
 
 /*HEADER */
 .header {
-	background-color: rgb(245, 245, 245);
-	box-shadow: 0em 0em 0.5em 0.1em rgb(40, 40, 40);
+	border-bottom: solid 1px rgb(228, 228, 228, 0.65);
 	width: 100%;
 	position: fixed;
-	padding: 10px;
 	z-index: 90;
 }
 .header .logo .img-logo {
 	width: 40px;
-	margin-right: 20px;
+	margin-left: 15px;
 }
 .header .navbar {
 	background-color: transparent;
 	height: 50px;
 }
 .header .nav-item {
-	padding-left: 15px;
+	padding-right: 15px;
 }
 .header .nav-item a {
 	font-family: 'Sarpanch', sans-serif;
@@ -117,7 +115,37 @@ a {
 	padding-left: 40px;
 }
 
-/*Gallery Collage Bootstrap*/
+/*Gallery Bootstrap*/
+.proyectos .article {
+	background-color: red;
+	border: solid 8px white;
+	border-radius: 5px;
+	box-shadow: 0.1em 0.1em 0.3em 0.1em rgb(211, 211, 211);
+	overflow-y: hidden;
+}
+
+.proyectos .imagen {
+	background-color: rgb(211, 211, 211);
+	border-radius: 5px;
+	height: 60%;
+}
+
+.proyectos .info {
+	background-color: white;
+}
+
+.proyectos .h2 {
+	font-size: 16px;
+	color: black;
+}
+
+.proyectos .p2 {
+	font-size: 14px;
+	color: rgb(60, 60, 60);
+}
+
+/*
+Gallery Collage Bootstrap
 .proyectos .my-grid {
 	box-shadow: inset 0 0 0 6px white;
 	border-radius: 2px;
@@ -139,6 +167,7 @@ a {
 	letter-spacing: 5px;
 	color: black;
 }
+*/
 
 
 /*ABOUT*/
@@ -270,8 +299,8 @@ a {
 }
 
 .showGoUp {
-	transition: background-color .3s, 
-    opacity .5s, visibility .5s;
+	transition: background-color 0.3s, 
+    opacity 0.5s, visibility 0.5s;
 	opacity: 0;
 	visibility: hidden;
 }
@@ -336,25 +365,23 @@ a {
 
 @media screen and (max-width: 768px) {
 	.header .navbar-toggler {
+		border: none;
 		margin-top: -3px;
 		height: 40px;
 		width: 60px;
 		box-shadow: none;
 	}
 	.header .navbar-nav {
-		background-color: rgb(245, 245, 245);
-		box-shadow: 0.2em 0.2em 0.5em 0.1em rgb(40, 40, 40);
-		border-radius: 2px;
-		width: 200px;
-		margin-left: 20px;
+		background-color: white;
 	}
 	.header .nav-item:hover {
 		background-color: rgb(168, 16, 16);
 		box-shadow: inset -0.1em -0.1em 0.5em 0.1em rgb(59, 6, 6);
 		padding: 0px;	
+		margin: 0;
 	}
 	.header .nav-link:hover {
 		color: white;
-		padding-left: 20px;
+		padding-right: 15px;
 	}
 }

@@ -31,25 +31,27 @@
 </head>
 
 <body>
-	<div class="container-fluid g-0">
-		<header class="header row g-0 align-items-center justify-content-between">
-			<nav class="navbar col-10 navbar-expand-md">
+	<div class="container-fluid">
+		<header class="header row align-items-center justify-content-between">
+			<nav class="navbar navbar-expand-md">
+				<div class="logo">
+					<a href="#inicio" title="logo">
+						<img src="assets/logo.png" alt="logo" class="img-logo">
+					</a>
+				</div>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarText">
-					<ul class="navbar-nav my-2">
+					<ul class="navbar-nav text-end">
 						<li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
 						<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
 						<li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
 					</ul>
 				</div>
+
 			</nav>
-			<div class="logo text-end col-2">
-				<a href="#inicio" title="logo">
-					<img src="assets/logo.png" alt="logo" class="img-logo">
-				</a>
-			</div>
+
 
 		</header>
 
@@ -64,7 +66,50 @@
 				<h1 class="h1">Proyectos</h1>
 				<p class="p">Biblioteca de proyectos realizados.</p>
 
-				<!--Gallery Collage Bootstrap-->
+				<!--Gallery Bootstrap-->
+				<div class="mygrid row justify-content-center">
+					<article class="article col-12 col-sm-4 col-lg-3 row g-0 m-3 thumbnail">
+						<div class="imagen justify-content-center">
+							<a href="#" title="Proyecto1">
+								<img src="assets/pr-secret.png" alt="Imagen" class="img w-100" loading="lazy">
+							</a>
+						</div>
+						<div class="info p-1">
+							<h2 class="h2"> Proyecto 1</h2>
+							<p class="p2"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus neque a, hic quis delectus eos?</p>
+						</div>
+					</article>
+
+					<article class="article col-12 col-sm-4 col-lg-3 row g-0 m-3 thumbnail">
+						<div class="imagen">
+							<a href="#" title="Proyecto2">
+								<img src="assets/pr-agricola.png" alt="Imagen" class="img w-100" loading="lazy">
+							</a>
+						</div>
+						<div class="info p-1">
+							<h2 class="h2"> Proyecto 2</h2>
+							<p class="p2"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus neque a, hic quis delectus eos?</p>
+						</div>
+					</article>
+
+					<article class="article col-12 col-sm-4 col-lg-3 row g-0 m-3 p-0 thumbnail">
+						<div class="imagen col-12">
+							<a href="#" title="Proyecto3">
+								<img src="assets/pr-pokemon.png" alt="Imagen" class="img w-100" loading="lazy">
+								</a>
+						</div>
+						<div class="info col-12 p-1">
+							<h2 class="h2"> Proyecto 3</h2>
+							<p class="p2"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus neque a, hic quis delectus eos?</p>
+						</div>
+					</article>
+				</div>
+
+
+
+
+				<!--
+				Gallery Collage Bootstrap
 				<div class="my-grid row g-0">
 					<article class="article col-12 row g-0 mb-0 p-1">
 						<div class="imagen col-12 col-md-5 col-lg-4 mb-0 border border-white border-2 order-2">
@@ -102,6 +147,7 @@
 						</div>
 					</article>
 				</div>
+				-->
 
 			</section>
 
