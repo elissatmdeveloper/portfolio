@@ -109,7 +109,6 @@ a {
 }
 .seccion .h1 {
 	font-size: 25px;
-	letter-spacing: 5px;
 }
 .seccion .h1 {
 	padding-bottom: 25px;
@@ -227,9 +226,22 @@ a {
 	background: rgb(168, 16, 16);
 	color: white;
 }
-.contacto .form{
-	padding-left: 40px;
+
+/*Formulario*/
+.contacto .form {
+	width: 70%;
+	display: block;
 }
+.contacto .form .label {
+	background-color: white;
+}
+.contacto .my-form-control,
+.contacto .my-form-label {
+	font-size: 13px;
+	border: solid 1px rgb(228, 228, 228);
+	padding: 15px;
+}
+
 .contacto .email {
 	color: white;
 }
@@ -257,8 +269,7 @@ a {
 	position: fixed;
 	bottom: 10px;
 	right: 10px;
-	transition: background-color 0.3s, 
-    opacity 0.5s, visibility 0.5s;
+	transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
 	z-index: 80;
 }
 #goUp:hover {
@@ -277,8 +288,7 @@ a {
 	color: white;
 }
 .showGoUp {
-	transition: background-color 0.3s, 
-    opacity 0.5s, visibility 0.5s;
+	transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
 	opacity: 0;
 	visibility: hidden;
 }
@@ -337,6 +347,10 @@ a {
 	}
 	.about .group-pop:hover img {
 		transform: scale(5);
+	}
+
+	.contacto .form {
+		width: 100%;
 	}
 }
 

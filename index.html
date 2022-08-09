@@ -6,12 +6,9 @@
 	<title>Portfolio Elissa Torres Miranda</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<!-- Boostrap -->
+	<!-- Boostrap CSS -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-
-	<!--Fontawesome-->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 	<link href="css/app.css" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,7 +19,7 @@
 	<!-- jQuery CDN -->
 	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
-	<!-- Boostrap -->
+	<!-- Boostrap JS -->
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
 
@@ -45,7 +42,7 @@
 				<div class="collapse navbar-collapse justify-content-end" id="navbarText">
 					<ul class="navbar-nav text-end">
 						<li class="nav-item" data-toggle="collapse" data-target="#navbarText"><a class="nav-link" href="#proyectos">Proyectos</a></li>
-						<li class="nav-item" data-toggle="collapse" data-target="#navbarText"><a class="nav-link" href="#about">About</a></li>
+						<li class="nav-item" data-toggle="collapse" data-target="#navbarText"><a class="nav-link" href="#about">Sobre mi</a></li>
 						<li class="nav-item" data-toggle="collapse" data-target="#navbarText"><a class="nav-link" href="#contacto">Contacto</a></li>
 					</ul>
 				</div>
@@ -104,7 +101,7 @@
 			</section>
 
 			<section class="seccion about" id="about">
-				<h1 class="h1 text-center text-sm-end">A<span class="subrayado">bou</span>t</h1>
+				<h1 class="h1 text-center text-sm-end">So<span class="subrayado">bre </span>mi</h1>
 				<div class="my-grid row g-0 justify-content-center align-items-center">
 					<div class="imagen col-12 col-sm-4 mt-3 mb-5">
 						<img src="assets/foto2.jpg" alt="Imagen" class="img w-100" loading="lazy">
@@ -181,17 +178,27 @@
 
 			<section class="seccion contacto" id="contacto">
 				<h1 class="h1 text-center text-sm-end">Co<span class="subrayadoBlack">ntac</span>to</h1>
+
 				<div class="form p-0">
-					<div class="mb-3">
-						<label for="exampleFormControlInput1" class="form-label">Email address</label>
-						<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+					<div class="row label mb-2">
+						<label for="name" class="col-1 my-form-label m-0 p-1">
+							<img src="assets/ico-user.png" class="img w-100">
+						</label>
+						<input type="text" class="col-11 my-form-control p-1" id="name" placeholder="Nombre">
 					</div>
-					<div class="mb-3">
-						<label for="exampleFormControlTextarea1" class="form-label">TextArea</label>
-						<textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escribe aquí tu mensaje"></textarea>
+					<div class="row label mb-2">
+						<label for="email" class="col-1 my-form-label m-0 p-1">
+							<img src="assets/ico-user.png" class="img w-100">
+						</label>
+						<input type="email" class="col-11 my-form-control p-1" id="email" placeholder="Email">
 					</div>
-					<a href="contacto@etmfullstack.com" title="email" class="email">Enviar email a: contacto@etmfullstack.com</a>
+					<div class="row label mb-2">
+						<label for="text" class="my-form-label"></label>
+						<textarea class="my-form-control" id="text" rows="3" placeholder="Mensaje"></textarea>
+					</div>
 				</div>
+				<a href="contacto@etmfullstack.com" title="email" class="email">Enviar email a: contacto@etmfullstack.com</a>
+
 				<div class="rrss text-end">
 					<div class="icons">
 						<a href="#" title="Linkedin">
