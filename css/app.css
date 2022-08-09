@@ -31,10 +31,10 @@ a {
 	text-transform: uppercase;
 }
 .subrayado {
-	border-bottom: solid 5px rgb(168, 16, 16);
+	border-bottom: solid 4px rgb(168, 16, 16);
 }
 .subrayadoBlack {
-	border-bottom: solid 5px black;
+	border-bottom: solid 4px black;
 }
 
 
