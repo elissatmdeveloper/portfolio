@@ -228,18 +228,8 @@ a {
 }
 
 /*Formulario*/
-.contacto .form {
-	width: 70%;
-	display: block;
-}
-.contacto .form .label {
-	background-color: white;
-}
-.contacto .my-form-control,
-.contacto .my-form-label {
-	font-size: 13px;
-	border: solid 1px rgb(228, 228, 228);
-	padding: 15px;
+.contacto .form .mensaje {
+	min-height: 100px;
 }
 
 .contacto .email {

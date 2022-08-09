@@ -179,24 +179,25 @@
 			<section class="seccion contacto" id="contacto">
 				<h1 class="h1 text-center text-sm-end">Co<span class="subrayadoBlack">ntac</span>to</h1>
 
-				<div class="form p-0">
-					<div class="row label mb-2">
-						<label for="name" class="col-1 my-form-label m-0 p-1">
-							<img src="assets/ico-user.png" class="img w-100">
-						</label>
-						<input type="text" class="col-11 my-form-control p-1" id="name" placeholder="Nombre">
+				<form class="form" method='POST' action="/php/enviar.php">
+					<div class="form-group mb-2">
+						<label for="nombre">Nombre</label>
+						<input type="text" class="form-control" name='nombre' id="nombre" placeholder="nombre...">
 					</div>
-					<div class="row label mb-2">
-						<label for="email" class="col-1 my-form-label m-0 p-1">
-							<img src="assets/ico-user.png" class="img w-100">
-						</label>
-						<input type="email" class="col-11 my-form-control p-1" id="email" placeholder="Email">
+					<div class="form-group mb-4">
+						<label for="email">Email</label>
+						<input type="email" class="form-control" name='email' id="email" placeholder="email...">
 					</div>
-					<div class="row label mb-2">
-						<label for="text" class="my-form-label"></label>
-						<textarea class="my-form-control" id="text" rows="3" placeholder="Mensaje"></textarea>
+					<div class="form-group mb-2">
+						<label for="exampleTextarea">Mensaje</label>
+						<textarea class="form-control mensaje" name='mensaje' id="mensaje" rows="3"></textarea>
 					</div>
-				</div>
+					<div class="form-group m-2">
+						<input type="checkbox" required>Acepto la política de privacidad.
+					</div>
+					<button class="btn btn-light m-3" type="submit">Enviar</button>
+				</form>
+
 				<a href="contacto@etmfullstack.com" title="email" class="email">Enviar email a: contacto@etmfullstack.com</a>
 
 				<div class="rrss text-end">
