@@ -30,6 +30,12 @@ a {
 	font-family: 'Sarpanch', sans-serif;
 	text-transform: uppercase;
 }
+.subrayado {
+	border-bottom: solid 5px rgb(168, 16, 16);
+}
+.subrayadoBlack {
+	border-bottom: solid 5px black;
+}
 
 
 /*HEADER */
@@ -94,7 +100,7 @@ a {
 
 /*SECCION*/
 .seccion {
-padding: 80px;
+	padding: 80px;
 	border-bottom: solid 1px rgb(228, 228, 228);
 	border-top: solid 1px rgb(228, 228, 228);
 }
@@ -103,7 +109,7 @@ padding: 80px;
 	letter-spacing: 5px;
 }
 .seccion .h1 {
-	padding-bottom: 5px;
+	padding-bottom: 25px;
 }
 
 
@@ -111,29 +117,33 @@ padding: 80px;
 /*Gallery Bootstrap*/
 .proyectos .article {
 	background-color: white;
-	padding: 5px;
+	padding: 8px;
 	border: solid 1px rgb(228, 228, 228);
-
 }
 .proyectos .article:hover {
 	cursor: pointer;
-	border: solid 2px rgb(168, 16, 16);
+	border: solid 1px rgb(168, 16, 16);
 
 }
 .proyectos .imagen {
 	background-color: rgb(228, 228, 228);
-	border-radius: 5px;
+	border-radius: 3px;
+	height: 300px;
+	overflow: hidden;
+}
+.proyectos .imagen .img {
+	height: 100%;
+	object-fit: scale-down;
+	border: solid 1px rgb(200, 200, 200);
 }
 .proyectos .info {
-	background-color: white;
-
+	height: 80px;
 }
 .proyectos .h2 {
 	font-size: 16px;
 	color: black;
 }
 .proyectos .p2 {
-	font-size: 14px;
 	color: rgb(60, 60, 60);
 }
 
