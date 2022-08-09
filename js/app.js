@@ -3,6 +3,7 @@ $(document).ready(function() {
     let goUp = $('#goUp');
     let header = $('.header');
 
+    /*muestra u oculta los elementos goUp y header(menu) segun el desplazamiento de ventana*/
     $(window).scroll(function() {
         if ($(window).scrollTop() > 200) {
             goUp.removeClass('showGoUp');
@@ -16,6 +17,7 @@ $(document).ready(function() {
         }
     });
 
+    /*desplaza contenido al inicio de html*/
     goUp.click(
         function(e) {
             e.preventDefault();
