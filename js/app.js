@@ -1,7 +1,7 @@
 $(document).ready(function() {
   
     let goUp = $('#goUp');
-    let header = $('#header');
+    let header = $('.header');
 
     $(window).scroll(function() {
         if ($(window).scrollTop() > 200) {
@@ -16,9 +16,11 @@ $(document).ready(function() {
         }
     });
 
-    goUp.on('click', function(e) {
-        e.preventDefault();
-        $('html, body').animate({scrollTop:0}, '1000');
-    });
+    goUp.click(
+        function(e) {
+            e.preventDefault();
+            $('html, body').animate({scrollTop:0}, '1000');
+        }
+    );
 
 }); 

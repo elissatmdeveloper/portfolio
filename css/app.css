@@ -70,6 +70,11 @@ a {
 	text-transform: uppercase;
 	color: rgb(60, 60, 60);
 }
+.ocultarMenu {
+	transform: scaleY(0);
+	transform-origin: top;
+	transition: all 0.2s;
+}
 
 
 /*INICIO*/
