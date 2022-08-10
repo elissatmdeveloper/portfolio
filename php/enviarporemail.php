@@ -11,11 +11,6 @@
 		$email_to = "elissawww@gmail.com";
 		$email_subject = "Contacto desde el sitio web ETM";
 
-		var_dump(isset($nombre));
-		var_dump(isset($email));
-		var_dump(isset($telefono));
-		var_dump(isset($mensaje));
-
 		// Validar los datos ingresados por el usuario
 		if(!isset($nombre) ||
 			!isset($email) ||
