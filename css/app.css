@@ -40,7 +40,6 @@ a {
 
 /*HEADER */
 .header {
-	border-bottom: solid 1px rgb(228, 228, 228, 0.65);
 	width: 100%;
 	position: fixed;
 	height: 70px;
@@ -115,41 +114,6 @@ a {
 }
 
 
-/*PROYECTOS*/
-/*Gallery Bootstrap*/
-.proyectos .article {
-	background-color: white;
-	padding: 8px;
-	border: solid 1px rgb(228, 228, 228);
-}
-.proyectos .article:hover {
-	cursor: pointer;
-	border: solid 1px rgb(168, 16, 16);
-
-}
-.proyectos .imagen {
-	background-color: rgb(228, 228, 228);
-	border-radius: 3px;
-	height: 300px;
-	overflow: hidden;
-}
-.proyectos .imagen .img {
-	height: 100%;
-	object-fit: scale-down;
-	border: solid 1px rgb(200, 200, 200);
-}
-.proyectos .info {
-	height: 80px;
-}
-.proyectos .h2 {
-	font-size: 16px;
-	color: black;
-}
-.proyectos .p2 {
-	color: rgb(60, 60, 60);
-}
-
-
 /*ABOUT*/
 .about .my-grid .imagen .img {
 	box-shadow: 0.2em 0.2em 0.3em 0.1em rgb(0, 0, 0, 0.85);
@@ -221,6 +185,41 @@ a {
 }
 
 
+/*PROYECTOS*/
+/*Gallery Bootstrap*/
+.proyectos .article {
+	background-color: white;
+	padding: 8px;
+	border: solid 1px rgb(228, 228, 228);
+}
+.proyectos .article:hover {
+	cursor: pointer;
+	border: solid 1px rgb(168, 16, 16);
+
+}
+.proyectos .imagen {
+	background-color: rgb(228, 228, 228);
+	border-radius: 3px;
+	height: 300px;
+	overflow: hidden;
+}
+.proyectos .imagen .img {
+	height: 100%;
+	object-fit: scale-down;
+	border: solid 1px rgb(200, 200, 200);
+}
+.proyectos .info {
+	height: 80px;
+}
+.proyectos .h2 {
+	font-size: 16px;
+	color: black;
+}
+.proyectos .p2 {
+	color: rgb(60, 60, 60);
+}
+
+
 /*CONTACT*/
 .contacto {
 	background: rgb(168, 16, 16);
@@ -231,9 +230,18 @@ a {
 .contacto .form .mensaje {
 	min-height: 100px;
 }
+.contacto .ico-label,
 .contacto .form-control {
+	background-color: white;
+	height: 35px;
+	border: solid 1px rgb(228, 228, 228);
 	border-radius: 0;
 	font-size: 13px;
+	height: 35px;
+}
+.contacto .ico-label .img {
+	height: 100%;
+	object-fit: scale-down;
 }
 .contacto .form-control:focus {
 	box-shadow: none;
@@ -244,10 +252,11 @@ a {
 	text-transform: uppercase;
 	width: 100px;
 }
-
+.contacto .check {
+	font-size: 12px;
+}
 .contacto .email {
 	color: white;
-	font-size: 13px;
 }
 .contacto .email:hover {
 	color: white;

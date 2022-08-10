@@ -4,6 +4,7 @@
 	$email = $_POST['email'];
 	$telefono = $_POST['phone'];
 	$mensaje = $_POST['message'];
+	$check = $_POST['check'];
 
 	if(isset($email)) {
 
@@ -26,7 +27,8 @@
 		$email_message .= "Nombre: " . $nombre . "\n";
 		$email_message .= "E-mail: " . $email . "\n";
 		$email_message .= "Teléfono: " . $telefono . "\n";
-		$email_message .= "Comentarios: " . $mensaje . "\n\n";
+		$email_message .= "Comentarios: " . $mensaje . "\n";
+		$email_message .= "Acepto la política de privacidad: " . $check . "\n\n";
 
 		// Ahora se envía el e-mail usando la función mail() de PHP
 		$headers = 'From: '.$email."\r\n".
@@ -35,6 +37,7 @@
 		@mail($email_to, $email_subject, $email_message, $headers);
 
 		echo "¡El formulario se ha enviado con éxito!";
+		
 	}
 
 ?>
