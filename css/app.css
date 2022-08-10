@@ -92,11 +92,11 @@ a {
 	animation: fadein 3s linear;
 }
 .inicio .h2 {
-	font-size: 20px;
+	font-size: 25px;
 	font-weight: bold;
 	letter-spacing: 15px;
 	color: white;
-	text-shadow: 0.1em 0.1em 0.1em black;
+	text-shadow: 0.1em 0.1em 0.2em black;
 	animation: fadein 3s linear;
 }
 
@@ -231,6 +231,17 @@ a {
 .contacto .form .mensaje {
 	min-height: 100px;
 }
+.contacto .form-control {
+	border-radius: 0;
+	font-size: 13px;
+}
+.contacto .form-control:focus {
+	box-shadow: none;
+}
+.contacto .form .btn {
+	font-size: 14px;
+	border-radius: 0;
+}
 
 .contacto .email {
 	color: white;
@@ -324,7 +335,7 @@ a {
 		letter-spacing: 5px;
 	}
 	.inicio .h2 {
-		font-size: 12px;
+		font-size: 15px;
 		font-weight: bold;
 		letter-spacing: 10px;
 	}
