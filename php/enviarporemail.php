@@ -8,7 +8,7 @@
 	if(isset($email)) {
 
 		// Email provisional
-		$email_to = "elissawww@gmail.com";
+		$email_to = "elissa.tm.developer@gmail.com";
 		$email_subject = "Contacto desde el sitio web ETM";
 
 		// Validar los datos ingresados por el usuario

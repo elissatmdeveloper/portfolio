@@ -239,12 +239,15 @@ a {
 	box-shadow: none;
 }
 .contacto .form .btn {
-	font-size: 14px;
+	font-size: 13px;
 	border-radius: 0;
+	text-transform: uppercase;
+	width: 100px;
 }
 
 .contacto .email {
 	color: white;
+	font-size: 13px;
 }
 .contacto .email:hover {
 	color: white;
