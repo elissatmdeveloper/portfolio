@@ -33,9 +33,6 @@ a {
 .subrayado {
 	border-bottom: solid 3px rgb(168, 16, 16);
 }
-.subrayadoBlack {
-	border-bottom: solid 3px black;
-}
 
 
 /*HEADER */
@@ -53,6 +50,7 @@ a {
 .header .logo .img-logo {
 	width: 40px;
 	margin-left: 55px;
+	filter: invert(1);
 }
 .header .navbar {
 	background-color: transparent;
@@ -67,7 +65,7 @@ a {
 	font-size: 16px;
 	font-weight: 600;
 	text-transform: uppercase;
-	color: rgb(60, 60, 60);
+	color: white;
 }
 .ocultarMenu {
 	transform: scaleY(0);
@@ -78,9 +76,11 @@ a {
 
 /*INICIO*/
 .inicio {
- 	background-image: url('../assets/bitmap.png');
+ 	background-image: url('../assets/img-prog-128R.jpg');
+	background-size: cover;
 	height: 600px;
 	padding: 80px 25px;
+	
 }
 .inicio .h1 {
 	font-size: 60px;
@@ -103,14 +103,75 @@ a {
 /*SECCION*/
 .seccion {
 	padding: 80px;
-	border-bottom: solid 1px rgb(228, 228, 228);
-	border-top: solid 1px rgb(228, 228, 228);
 }
 .seccion .h1 {
-	font-size: 25px;
+	font-size: 30px;
+	font-weight: bold;
 }
 .seccion .h1 {
 	padding-bottom: 25px;
+}
+
+
+/*PROYECTOS*/
+.proyectos {
+	background-color: white;
+}
+/*Gallery Bootstrap*/
+.proyectos .article {
+	background-color: white;
+	padding: 8px;
+	border: solid 1px rgb(228, 228, 228);
+}
+.proyectos .article:hover {
+	cursor: pointer;
+	border: solid 1px rgb(168, 16, 16);
+
+}
+.proyectos .imagen {
+	background-color: rgb(228, 228, 228);
+	border-radius: 3px;
+	height: 300px;
+	overflow: hidden;
+}
+.proyectos .imagen .img {
+	height: 100%;
+	object-fit: scale-down;
+	border: solid 1px rgb(200, 200, 200);
+}
+.proyectos .info {
+	height: 80px;
+}
+.proyectos .h2 {
+	font-size: 16px;
+	color: black;
+}
+.proyectos .p2 {
+	color: rgb(60, 60, 60);
+}
+
+/*CENTRAL*/
+.central {
+	position: relative;
+	height: 200px;
+	overflow: hidden;
+}
+.central .img {
+	filter: grayscale(1);
+	
+	z-index: 1;
+}
+.central .texto {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding-top: 55px;
+	z-index: 2;
+	background-color: rgb(168, 16, 16, 0.35);
+	backdrop-filter: opacity (0.5);
+	color: white;
 }
 
 
@@ -185,45 +246,12 @@ a {
 }
 
 
-/*PROYECTOS*/
-/*Gallery Bootstrap*/
-.proyectos .article {
-	background-color: white;
-	padding: 8px;
-	border: solid 1px rgb(228, 228, 228);
-}
-.proyectos .article:hover {
-	cursor: pointer;
-	border: solid 1px rgb(168, 16, 16);
-
-}
-.proyectos .imagen {
-	background-color: rgb(228, 228, 228);
-	border-radius: 3px;
-	height: 300px;
-	overflow: hidden;
-}
-.proyectos .imagen .img {
-	height: 100%;
-	object-fit: scale-down;
-	border: solid 1px rgb(200, 200, 200);
-}
-.proyectos .info {
-	height: 80px;
-}
-.proyectos .h2 {
-	font-size: 16px;
-	color: black;
-}
-.proyectos .p2 {
-	color: rgb(60, 60, 60);
-}
-
-
 /*CONTACT*/
 .contacto {
 	background: rgb(168, 16, 16);
 	color: white;
+	background-image: url('../assets/img-prog-121.jpg');
+	background-size: cover;
 }
 
 /*Formulario*/
@@ -371,6 +399,7 @@ a {
 	.header .navbar-toggler {
 		border: none;
 		box-shadow: none;
+		filter: invert();
 	}
 	.header .navbar-nav {
 		background-color: white;
@@ -380,8 +409,14 @@ a {
 		box-shadow: inset -0.1em -0.1em 0.5em 0.05em rgb(0, 0, 0, 0.85);
 		margin: 0;
 	}
+	.header .nav-item:hover {
+			background-color: rgb(168, 16, 16);
+			box-shadow: inset -0.1em -0.1em 0.5em 0.05em rgb(0, 0, 0, 0.85);
+			margin: 0;
+	}
 	.header .nav-link:hover {
 		color: white;
+
 	}
 
 	.seccion {

@@ -7,5 +7,7 @@
 			"path": "..\\..\\..\\IOC - DAW\\Brackets_WorkSpace"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "etm-portfolio"
+	}
 }
