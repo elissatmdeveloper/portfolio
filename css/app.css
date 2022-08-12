@@ -36,7 +36,7 @@ a {
 .boton {
 	font-size: 18px;
 	background-color: white;
-	border: none;
+	border: solid 1px white;
 	border-radius: 5px;
 	padding: 5px 30px;
 	text-transform: uppercase;
@@ -45,7 +45,7 @@ a {
 	transition: all 0.5s;
 }
  .boton:hover {
-	background-color: rgb(245, 24, 24);
+	background-color: rgb(168, 16, 16);
 	color: white;
 	transition: all 0.5s;
 }

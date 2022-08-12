@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-	/*muestra u oculta los elementos goUp y header(menu) segun el desplazamiento de ventana*/
+	// Muestra u oculta los elementos goUp y header(menu) segun el desplazamiento de ventana
 	let goUp = $('#goUp');
 	let header = $('.header');
 	let item = $('.nav-link');
@@ -23,7 +23,7 @@ $(document).ready(function() {
 	});
 
 
-	/*desplaza contenido al inicio de html*/
+	// Desplaza contenido al inicio de html
 	goUp.click(
 		function(e) {
 			e.preventDefault();
