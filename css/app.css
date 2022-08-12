@@ -39,13 +39,13 @@ a {
 .header {
 	width: 100%;
 	position: fixed;
-	height: 70px;
+	height: 60px;
 	transition: all 0.5s;
 	z-index: 90;
 }
 .showBG {
 	box-shadow: 0.1em 0.1em 0.3em 0.1em rgb(0, 0, 0, 0.4);
-	background-color: rgb(245, 245, 245);
+	background-color: black;
 }
 .header .logo .img-logo {
 	width: 40px;
@@ -60,12 +60,16 @@ a {
 	padding-right: 15px;
 	padding-left: 15px;
 }
-.header .nav-item a {
+.header .nav-link {
 	font-family: 'Sarpanch', sans-serif;
 	font-size: 16px;
 	font-weight: 600;
 	text-transform: uppercase;
-	color: rgb(60, 60, 60);
+	color: white;
+}
+.header .nav-link:hover {
+	color: rgb(245, 24, 24);
+	transition: all 0.5s;
 }
 .ocultarMenu {
 	transform: scaleY(0);
@@ -384,25 +388,15 @@ a {
 	.header .navbar-toggler {
 		border: none;
 		box-shadow: none;
-		filter: invert();
+		filter: invert(1);
 		margin-right: 25px;
 	}
 	.header .navbar-nav {
-		background-color: white;
+		background-color: rgb(0, 0, 0, 0.75);
+		margin-top: 10px;
 	}
-	.header .nav-item:hover {
-		background-color: rgb(168, 16, 16);
-		box-shadow: inset -0.1em -0.1em 0.5em 0.05em rgb(0, 0, 0, 0.85);
-		margin: 0;
-	}
-	.header .nav-item:hover {
-			background-color: rgb(168, 16, 16);
-			box-shadow: inset -0.1em -0.1em 0.5em 0.05em rgb(0, 0, 0, 0.85);
-			margin: 0;
-	}
-	.header .nav-link:hover {
-		color: white;
-
+	.header .nav-item {
+		padding-right: 45px;
 	}
 
 	.seccion {
