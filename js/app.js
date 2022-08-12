@@ -31,4 +31,32 @@ $(document).ready(function() {
 		}
 	);
 
+	
+	// Banner de frases
+	let frase = $('#frase');
+	let autor = $('#autor');
+
+	$.ajax({
+			type: 'GET',
+			url: 'json/frases.json',
+			datatype: 'xml',
+			success: processarResposta,
+			error: processarError
+	});
+
+	function processarResposta(dades, statusText, jqXHR) {
+		let frases = new Array(); 
+		let autores = new Array();
+		for (let i = 0; i < 3; i++) {
+				frases.push(dades[i].phrase);
+				autores.push(dades[i].author);
+		}
+		frase.html(frases[2]);
+		autor.html(autores[2]);
+	}
+		
+	function processarError(jqXHR, statusText, error) {
+			console.log(error, statusText);
+	}
+	
 }); 

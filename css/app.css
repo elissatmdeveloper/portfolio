@@ -33,6 +33,22 @@ a {
 .subrayado {
 	border-bottom: solid 3px rgb(168, 16, 16);
 }
+.boton {
+	font-size: 18px;
+	background-color: white;
+	border: none;
+	border-radius: 5px;
+	padding: 5px 30px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: black;
+	transition: all 0.5s;
+}
+ .boton:hover {
+	background-color: rgb(245, 24, 24);
+	color: white;
+	transition: all 0.5s;
+}
 
 
 /*HEADER */
@@ -161,6 +177,23 @@ a {
 	background-size: cover;
 	background-position: center;
 	color: white;
+	padding: 0;
+	padding-top: 45px;
+	padding-bottom: 15px;
+}
+.central .autor {
+	font-size: 18px;
+	padding-bottom: 15px;
+}
+.central .autor::before,
+.central .autor::after {
+	content: " -- "
+}
+.central .p {
+	background-color: rgb(255, 255, 255, 0.65);
+	padding: 20px;
+	color: black;
+	font-weight: 600;
 }
 
 
@@ -263,11 +296,8 @@ a {
 .contacto .form-control:focus {
 	box-shadow: none;
 }
-.contacto .form .btn {
+.contacto .form .boton {
 	font-size: 13px;
-	border-radius: 0;
-	text-transform: uppercase;
-	width: 100px;
 }
 .contacto .check {
 	font-size: 13px;
@@ -402,5 +432,11 @@ a {
 	.seccion {
 		padding-right: 40px;
 		padding-left: 40px;
+	}
+
+	.central {
+		padding: 0;
+		padding-top: 45px;
+		padding-bottom: 15px;
 	}
 }
