@@ -13,6 +13,7 @@ $(document).ready(function() {
 		} else {
 			goUp.addClass('showGoUp');
 		}
+		
 		if ($(window).scrollTop() > 50) {
 			header.addClass('showBG');
 			item.css("color", "rgb(60, 60, 60)");

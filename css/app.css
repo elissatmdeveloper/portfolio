@@ -49,7 +49,7 @@ a {
 }
 .header .logo .img-logo {
 	width: 40px;
-	margin-left: 55px;
+	margin-left: 35px;
 	filter: invert(1);
 }
 .header .navbar {
@@ -65,7 +65,7 @@ a {
 	font-size: 16px;
 	font-weight: 600;
 	text-transform: uppercase;
-	color: white;
+	color: rgb(60, 60, 60);
 }
 .ocultarMenu {
 	transform: scaleY(0);
@@ -76,7 +76,7 @@ a {
 
 /*INICIO*/
 .inicio {
- 	background-image: url('../assets/img-prog-128R.jpg');
+ 	background-image: url('../assets/img-prog-123R.jpg');
 	background-size: cover;
 	height: 600px;
 	padding: 80px 25px;
@@ -150,27 +150,12 @@ a {
 	color: rgb(60, 60, 60);
 }
 
+
 /*CENTRAL*/
 .central {
-	position: relative;
-	height: 200px;
-	overflow: hidden;
-}
-.central .img {
-	filter: grayscale(1);
-	
-	z-index: 1;
-}
-.central .texto {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	padding-top: 55px;
-	z-index: 2;
-	background-color: rgb(168, 16, 16, 0.35);
-	backdrop-filter: opacity (0.5);
+	background-image: url("../assets/img-prog-113R.jpg");
+	background-size: cover;
+	background-position: center;
 	color: white;
 }
 
@@ -281,7 +266,7 @@ a {
 	width: 100px;
 }
 .contacto .check {
-	font-size: 12px;
+	font-size: 13px;
 }
 .contacto .email {
 	color: white;
@@ -400,6 +385,7 @@ a {
 		border: none;
 		box-shadow: none;
 		filter: invert();
+		margin-right: 25px;
 	}
 	.header .navbar-nav {
 		background-color: white;
