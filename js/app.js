@@ -1,6 +1,5 @@
 $(document).ready(function() {
 
-	
 	/*muestra u oculta los elementos goUp y header(menu) segun el desplazamiento de ventana*/
 	let goUp = $('#goUp');
 	let header = $('.header');

@@ -1,5 +1,6 @@
 <?php
 
+// Guardar los datos recibidos en variables
 	$nombre = $_POST['name'];
 	$email = $_POST['email'];
 	$telefono = $_POST['phone'];
@@ -8,9 +9,9 @@
 
 	if(isset($email)) {
 
-		// Email provisional
+		// Definir la dirección de destino y asunto
 		$email_to = "elissa.tm.developer@gmail.com";
-		$email_subject = "Contacto desde el sitio web ETM";
+		$email_subject = "Contacto desde el sitio web ETMdeveloper";
 
 		// Validar los datos ingresados por el usuario
 		if(!isset($nombre) ||
@@ -23,6 +24,7 @@
 			die();
 		}
 
+		// Arma el cuerpo del mensaje
 		$email_message = "Detalles del formulario de contacto:\n\n";
 		$email_message .= "Nombre: " . $nombre . "\n";
 		$email_message .= "E-mail: " . $email . "\n";
@@ -31,6 +33,7 @@
 		$email_message .= "Acepto la política de privacidad: " . $check . "\n\n";
 
 		// Ahora se envía el e-mail usando la función mail() de PHP
+		// Las cabeceras se usan para evitar que el correo llegue a SPAM
 		$headers = 'From: '.$email."\r\n".
 		'Reply-To: '.$email."\r\n" .
 		'X-Mailer: PHP/' . phpversion();
