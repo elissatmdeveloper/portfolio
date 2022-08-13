@@ -242,7 +242,8 @@ a {
 	transition: all 1s;
 	opacity: 0;
 }
-.about .text {
+.about .text,
+.about .skills {
 	padding-left: 55px;
 }
 
@@ -420,9 +421,6 @@ a {
 	.about .my-grid .imagen .img {
 		margin-left: 0;
 	}
-	.about .text {
-		padding-left: 0px;
-	}
 	.about .group-pop:hover img {
 		transform: scale(5);
 	}
@@ -456,5 +454,10 @@ a {
 		padding: 0;
 		padding-top: 45px;
 		padding-bottom: 15px;
+	}
+
+	.about .text,
+	.about .skills {
+		padding-left: 0px;
 	}
 }
