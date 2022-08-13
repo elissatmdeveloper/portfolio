@@ -1,5 +1,9 @@
 
 [
+  {
+    "phrase":"Siempre codifica como si la persona que finalmente mantendrá tu código fuera un psicópata violento que sabe dónde vives",
+    "author":"Martin Golding"
+  },
   { 
   "phrase":"Hay dos formas de construir un diseño de software. Una forma es hacerlo tan simple que es obvio que no hay deficiencias. Y la otra es hacerlo tan complicado que no hay deficiencias obvias",
   "author":"C.A.R. Hoare"
@@ -7,10 +11,7 @@
   {
     "phrase":"Un buen diseño aporta un valor añadido más rápido de lo que agrega costo",
     "author":"Thomas C. Gale"
-  },
-  {
-    "phrase":"Siempre codifica como si la persona que finalmente mantendrá tu código fuera un psicópata violento que sabe dónde vives",
-    "author":"Martin Golding"
   }
 ]
+
 

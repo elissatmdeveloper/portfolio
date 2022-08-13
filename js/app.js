@@ -19,22 +19,22 @@ $(document).ready(function() {
 		} else {
 			header.removeClass('showBG');
 		}
-
 	});
 
 
 	// Desplaza contenido al inicio de html
-	goUp.click(
-		function(e) {
+	goUp.click(function(e) {
 			e.preventDefault();
 			$('html, body').animate({scrollTop:0}, '1000');
-		}
-	);
+	});
 
 	
 	// Banner de frases
+	let frases = new Array(); 
+	let autores = new Array();
 	let frase = $('#frase');
 	let autor = $('#autor');
+	let actual = 0;
 
 	$.ajax({
 			type: 'GET',
@@ -45,18 +45,38 @@ $(document).ready(function() {
 	});
 
 	function processarResposta(dades, statusText, jqXHR) {
-		let frases = new Array(); 
-		let autores = new Array();
 		for (let i = 0; i < 3; i++) {
 				frases.push(dades[i].phrase);
 				autores.push(dades[i].author);
 		}
-		frase.html(frases[2]);
-		autor.html(autores[2]);
+		frase.html(frases[actual]);
+		autor.html(autores[actual]);
 	}
 		
 	function processarError(jqXHR, statusText, error) {
 			console.log(error, statusText);
 	}
+
+	$('#prevPhrase').click (function(e) {
+		e.preventDefault();
+		if(actual == 0) {
+			actual = (frases.length)-1;
+		} else {
+			actual = actual - 1;
+		}
+		frase.html(frases[actual]);
+		autor.html(autores[actual]);
+	});
+	
+	$('#nextPhrase').click (function(e) {
+		e.preventDefault();
+		if(actual == (frases.length)-1) {
+			actual = 0;
+		} else {
+			actual = actual + 1;
+		}
+		frase.html(frases[actual]);
+		autor.html(autores[actual]);
+	});
 	
 }); 

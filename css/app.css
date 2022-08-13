@@ -171,7 +171,7 @@ a {
 .central {
 	background-image: url("../assets/img-prog-113R.jpg");
 	background-size: cover;
-	background-position: center;
+	background-position: top;
 	color: white;
 	padding: 0;
 	padding-top: 25px;
@@ -199,9 +199,10 @@ a {
 	color: white;
 	width: 40px;
 	height: 40px;
+	margin-top: 15px;
 	transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
 }
-.central #prePhrase::after {
+.central #prevPhrase::after {
 	content: "\f104";
 	font-size: 4em;
 }
