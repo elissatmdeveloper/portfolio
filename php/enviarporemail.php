@@ -39,8 +39,10 @@
 		'X-Mailer: PHP/' . phpversion();
 		@mail($email_to, $email_subject, $email_message, $headers);
 
-		echo "¡El formulario se ha enviado con éxito!";
-		
+		echo '<script type="text/javascript">
+					alert("¡El formulario se ha enviado con éxito!");
+					window.location.href="../index.html";
+					</script>';
 	}
 
 ?>
