@@ -1,14 +1,12 @@
 body {
 	background-color: rgb(245, 245, 245);
 }
-
 .container-fluid {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
 	background-color: rgb(245, 245, 245);
 	color: black;
 }
-
 .icons .img {
 	width: 40px;
 	height: 40px;
@@ -21,11 +19,9 @@ body {
 	transition: all 1s;
 	box-shadow: 0.1em 0.1em 0.2em 0.05em rgb(0, 0, 0, 0.85);
 }
-
 a {
 	text-decoration: none;
 }
-
 .h1, .h2, .h3 {
 	font-family: 'Sarpanch', sans-serif;
 	text-transform: uppercase;
@@ -178,12 +174,13 @@ a {
 	background-position: center;
 	color: white;
 	padding: 0;
-	padding-top: 45px;
-	padding-bottom: 15px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	position: relative;
+	z-index: 1;
 }
 .central .autor {
 	font-size: 18px;
-	padding-bottom: 15px;
 }
 .central .autor::before,
 .central .autor::after {
@@ -194,6 +191,26 @@ a {
 	padding: 20px;
 	color: black;
 	font-weight: 600;
+}
+.central .arrowPhrase {
+	font-family: FontAwesome;
+	font-weight: bold;
+	line-height: 40px;
+	color: white;
+	width: 40px;
+	height: 40px;
+	transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+}
+.central #prePhrase::after {
+	content: "\f104";
+	font-size: 4em;
+}
+.central #nextPhrase::after {
+	content: "\f105";
+	font-size: 4em;
+}
+.central .arrowPhrase:hover {
+	cursor: pointer;
 }
 
 
