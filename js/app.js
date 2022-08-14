@@ -21,7 +21,6 @@ $(document).ready(function() {
 		}
 	});
 
-
 	// Desplaza contenido al inicio de html
 	goUp.click(function(e) {
 			e.preventDefault();
@@ -32,8 +31,10 @@ $(document).ready(function() {
 	// Banner de frases
 	let frases = new Array(); 
 	let autores = new Array();
+	let motivs = new Array();
 	let frase = $('#frase');
 	let autor = $('#autor');
+	let motiv = $('#motiv');
 	let actual = 0;
 
 	$.ajax({
@@ -48,9 +49,11 @@ $(document).ready(function() {
 		for (let i = 0; i < 3; i++) {
 				frases.push(dades[i].phrase);
 				autores.push(dades[i].author);
+				motivs.push(dades[i].motiv);
 		}
 		frase.html(frases[actual]);
 		autor.html(autores[actual]);
+		motiv.html(motivs[actual]);
 	}
 		
 	function processarError(jqXHR, statusText, error) {
@@ -66,8 +69,9 @@ $(document).ready(function() {
 		}
 		frase.html(frases[actual]);
 		autor.html(autores[actual]);
+		motiv.html(motivs[actual]);
 	});
-	
+
 	$('#nextPhrase').click (function(e) {
 		e.preventDefault();
 		if(actual == (frases.length)-1) {
@@ -77,6 +81,7 @@ $(document).ready(function() {
 		}
 		frase.html(frases[actual]);
 		autor.html(autores[actual]);
+		motiv.html(motivs[actual]);
 	});
 	
 }); 
