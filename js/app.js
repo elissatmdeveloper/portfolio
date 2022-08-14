@@ -100,6 +100,10 @@ $(document).ready(function() {
 	icons.click (function() {
 		let popup = $(this).children('.popup');
 			if(popup.hasClass('ocultar-popup')) {
+				icons.children('.img').removeClass('ampliar-img-popup');
+				icons.children('.img').css('z-index','1');
+				icons.children('.popup').removeClass('mostrar-popup');
+				icons.children('.popup').addClass('ocultar-popup');
 				$(this).children('.img').addClass('ampliar-img-popup');
 				$(this).children('.img').css('z-index','20');
 				$(this).children('.popup').addClass('mostrar-popup');
