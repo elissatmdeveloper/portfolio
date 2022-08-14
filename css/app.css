@@ -156,7 +156,7 @@ a {
 	border: solid 1px rgb(200, 200, 200);
 }
 .proyectos .info {
-	height: 80px;
+	height: 90px;
 }
 .proyectos .h2 {
 	font-size: 16px;
@@ -164,6 +164,7 @@ a {
 }
 .proyectos .p2 {
 	color: rgb(60, 60, 60);
+	font-size: 12px;
 }
 
 
