@@ -240,9 +240,10 @@ a {
 	z-index: 1;
 	transition: all 1s;
 }
-.about .my-grid .imagen:hover .img:last-child {
+.about .ocultar-img {
 	transition: all 1s;
 	opacity: 0;
+	visibility: hidden
 }
 .about .text,
 .about .skills {
@@ -255,7 +256,11 @@ a {
 	position: relative;
 	display: inline-block;
 }
-.about .popup {
+.about .ampliar-img-popup {
+	transform: scale(6);
+	transition: all 0.5s;
+}
+.about .ocultar-popup {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -267,12 +272,14 @@ a {
 	opacity: 0;
 	transition: opacity 1s;
 }
-.about .icons:hover .img {
-	z-index: 20;
-	transform: scale(6);
-	transition: all 0.5s;
-}
-.about .icons:hover .popup {
+.about .mostrar-popup {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	border-radius: 1000px;
+	padding: 25px;
+	padding-top: 55px;
+	transform: translate(-50%, -50%);
 	background-color: rgba(255, 255, 255, 0.65);
 	opacity: 1;
 	z-index: 25;

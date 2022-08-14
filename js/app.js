@@ -3,9 +3,6 @@ $(document).ready(function() {
 	// Muestra u oculta los elementos goUp y header(menu) segun el desplazamiento de ventana
 	let goUp = $('#goUp');
 	let header = $('.header');
-	let item = $('.nav-link');
-	let logo = $('.img-logo');
-	let btnNavbar = $(".navbar-toggler");
 
 	$(window).scroll(function() {
 		if ($(window).scrollTop() > 200) {
@@ -84,4 +81,35 @@ $(document).ready(function() {
 		motiv.html(motivs[actual]);
 	});
 	
+
+	// Muestra u oculta imagen about
+	let imgPrincipal = $('#imgPrincipal');
+	let imgFondo = $('#imgFondo');
+	imgPrincipal.click (function(e) {
+		e.preventDefault();
+		imgPrincipal.addClass('ocultar-img');
+	})
+	imgFondo.click (function(e) {
+		e.preventDefault();
+		imgPrincipal.removeClass('ocultar-img');
+	})
+
+
+	// Muestra u oculta PopUp about
+	let icons = $('.icons');
+	icons.click (function() {
+		let popup = $(this).children('.popup');
+			if(popup.hasClass('ocultar-popup')) {
+				$(this).children('.img').addClass('ampliar-img-popup');
+				$(this).children('.img').css('z-index','20');
+				$(this).children('.popup').addClass('mostrar-popup');
+				$(this).children('.popup').removeClass('ocultar-popup');
+			} else {
+				$(this).children('.img').removeClass('ampliar-img-popup');
+				$(this).children('.img').css('z-index','1');
+				$(this).children('.popup').removeClass('mostrar-popup');
+				$(this).children('.popup').addClass('ocultar-popup');
+			}
+	})
+
 }); 
