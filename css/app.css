@@ -114,6 +114,9 @@ a {
 	color: white;
 	text-shadow: 0.1em 0.1em 0.2em black;
 }
+.inicio .h3 {
+	font-size: 20px;
+}
 
 
 /*SECCION*/
@@ -401,14 +404,24 @@ a {
 }
 
 /*Efecto máquina de escribir*/
-.type-text {
-	border-right: solid 1px white;
+.type-text1 {
+	border-right: solid 1px transparent;
 	white-space: nowrap;
 	overflow: hidden;
 	color: white;
 	width: 500px;
 	height: 25px;
-	animation: type 3s steps(30) 3 alternate, blink .5s step-end infinite alternate;
+	animation: type 3s steps(30) 1 alternate, blink .4s step-end 9 alternate;
+}
+.type-text2 {
+	border-right: solid 1px transparent;
+	white-space: nowrap;
+	overflow: hidden;
+	color: white;
+	width: 250px;
+	height: 25px;
+	animation: type 3s steps(30) 1 alternate, blink .3s step-end 6 alternate;
+	animation-delay: 3.5s;
 }
 @keyframes type {
 	0% {
@@ -423,7 +436,7 @@ a {
 }
 @keyframes blink {
 	50% {
-		border-color: transparent;
+		border-color: white;
 	}
 }
 
