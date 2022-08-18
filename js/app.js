@@ -39,7 +39,7 @@ $(document).ready(function() {
 				typeText.children[1+count].innerHTML = text[0+count].substring(0, position) + '<span class="blink">|</span>';
 				setTimeout(write, speed);
 			} else {
-				typeText.children[1+count].children[0].remove();
+				typeText.children[1+count].children[0].style.opacity = "0";
 				position = 0;
 				count++;
 				write();
