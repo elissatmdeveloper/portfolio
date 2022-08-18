@@ -32,8 +32,8 @@ $(document).ready(function() {
 	let count = 0;
 	let typeText = document.querySelector("#inicio");
 
-	window.addEventListener("load", write);
-
+	//window.addEventListener("load", write);
+	write();
 	function write () {
 		if (count != text.length) {
 			if(position++ != text[0+count].length) {
