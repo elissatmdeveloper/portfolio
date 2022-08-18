@@ -32,9 +32,7 @@ $(document).ready(function() {
 	let count = 0;
 	let typeText = document.querySelector("#inicio");
 
-	//window.addEventListener("load", write);
-	write();
-	function write () {
+	window.onload = function write () {
 		if (count != text.length) {
 			if(position++ != text[0+count].length) {
 				typeText.children[1+count].innerHTML = text[0+count].substring(0, position) + '<span class="blink">|</span>';
