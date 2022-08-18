@@ -113,10 +113,12 @@ a {
 	letter-spacing: 10px;
 	color: white;
 	text-shadow: 0.1em 0.1em 0.2em black;
+	opacity: 0;
 }
 .inicio .h3 {
 	font-size: 20px;
 	color: white;
+	opacity: 0;
 }
 
 

@@ -36,9 +36,11 @@ $(document).ready(function() {
 	function write () {
 		if (count != text.length) {
 			if(position++ != text[0+count].length) {
+				typeText.children[1+count].style.opacity = "1";
 				typeText.children[1+count].innerHTML = text[0+count].substring(0, position) + '<span class="blink">|</span>';
 				setTimeout(write, speed);
 			} else {
+				typeText.children[1+count].style.opacity = "1";
 				typeText.children[1+count].children[0].style.opacity = "0";
 				position = 0;
 				count++;
