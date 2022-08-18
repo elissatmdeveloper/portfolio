@@ -116,6 +116,7 @@ a {
 }
 .inicio .h3 {
 	font-size: 20px;
+	color: white;
 }
 
 
@@ -293,7 +294,8 @@ a {
 	height: 240px;
 }
 .about .popup h2 {
-	font-size: 18px;
+	font-size: 28px;
+	padding-top: 50px;
 }
 .about .popup p {
 	font-size: 13px;
@@ -403,57 +405,29 @@ a {
 	}
 }
 
-/*Efecto máquina de escribir*/
-.type-text1 {
-	border-right: solid 1px transparent;
-	white-space: nowrap;
-	overflow: hidden;
-	color: white;
-	width: 500px;
-	height: 25px;
-	animation: type 3s steps(30) 1 alternate, blink .4s step-end 9 alternate;
+/*Efecto cursor máquina de escribir*/
+.blink {
+  animation: blinker 1s linear infinite;
 }
-.type-text2 {
-	border-right: solid 1px transparent;
-	white-space: nowrap;
-	overflow: hidden;
-	color: white;
-	width: 250px;
-	height: 25px;
-	animation: type 3s steps(30) 1 alternate, blink .3s step-end 6 alternate;
-	animation-delay: 3.5s;
-}
-@keyframes type {
-	0% {
-		width: 0;
-	}
-	1% {
-		opacity: 1;
-	}
-	100% {
-		opacity: 1;
-	}
-}
-@keyframes blink {
-	50% {
-		border-color: white;
-	}
+@keyframes blinker{
+  50%{
+    opacity: 0;
+  }
 }
 
 
 /*MEDIAQUERY*/
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 575px) {
 	.inicio .h1 {
 		font-size: 45px;
 		letter-spacing: 5px;
 	}
 	.inicio .h2 {
-		font-size: 16px;
+		font-size: 20px;
 		letter-spacing: 3px;
 	}
-	.inicio .type-text {
-		width: 380px;
-		height: 18px;
+	.inicio .h3 {
+		font-size: 16px;
 	}
 
 	.about .my-grid .imagen .img {
@@ -468,7 +442,7 @@ a {
 	}
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 	.header .logo {
 		padding-left: 20px;
 	}

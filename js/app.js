@@ -24,7 +24,31 @@ $(document).ready(function() {
 			$('html, body').animate({scrollTop:0}, '1000');
 	});
 
-	
+
+	// Efecto texto máquina de escribir (javaScript)
+	let text = ["Full Stack Developer","w3lcom3 to my sit3 !!!"];
+	let position = 0; 
+	let speed = 100;
+	let count = 0;
+	let typeText = document.querySelector("#inicio");
+
+	window.addEventListener("load", write);
+
+	function write () {
+		if (count != text.length) {
+			if(position++ != text[0+count].length) {
+				typeText.children[1+count].innerHTML = text[0+count].substring(0, position) + '<span class="blink">|</span>';
+				setTimeout(write, speed);
+			} else {
+				typeText.children[1+count].children[0].remove();
+				position = 0;
+				count++;
+				write();
+			}
+		}
+	}
+
+
 	// Banner de frases
 	let frases = new Array(); 
 	let autores = new Array();
