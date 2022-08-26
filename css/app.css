@@ -69,11 +69,11 @@ a {
 .header .navbar {
 	background-color: transparent;
 	height: 50px;
-	padding-right: 65px;
+
 }
 .header .nav-item {
-	padding-right: 15px;
-	padding-left: 15px;
+	padding-right: 10px;
+	padding-left: 10px;
 }
 .header .nav-link {
 	font-family: 'Sarpanch', sans-serif;
@@ -91,7 +91,13 @@ a {
 	transform-origin: top;
 	transition: all 0.2s;
 }
-
+.header .rrss {
+	display: inline-flex;
+	transform: scale(0.6);
+}
+.header .rrss .icons {
+	padding-left: 10px;
+}
 
 /*INICIO*/
 .inicio {
@@ -466,6 +472,9 @@ a {
 	}
 	.header .nav-item {
 		padding-right: 25px;
+	}
+	.header .rrss {
+		display: none;
 	}
 
 	.seccion {
