@@ -60,7 +60,7 @@ a {
 	background-color: black;
 }
 .header .logo {
-	padding-left: 65px;
+	padding-left: 55px;
 }
 .header .logo .img-logo {
 	width: 40px;
@@ -69,11 +69,10 @@ a {
 .header .navbar {
 	background-color: transparent;
 	height: 50px;
-
 }
 .header .nav-item {
-	padding-right: 10px;
-	padding-left: 10px;
+	padding-right: 25px;
+
 }
 .header .nav-link {
 	font-family: 'Sarpanch', sans-serif;
@@ -92,11 +91,12 @@ a {
 	transition: all 0.2s;
 }
 .header .rrss {
-	display: inline-flex;
-	transform: scale(0.6);
+	display: flex;
+	justify-content: end;
+	border-left: solid 2px white;
 }
 .header .rrss .icons {
-	padding-left: 10px;
+	transform: scale(0.75);
 }
 
 /*INICIO*/
@@ -267,6 +267,7 @@ a {
 	cursor: pointer;
 	position: relative;
 	display: inline-block;
+	padding-top: 4px;
 }
 .about .ampliar-img-popup {
 	transform: scale(5);
@@ -455,9 +456,6 @@ a {
 	.header .logo {
 		padding-left: 20px;
 	}
-	.header .navbar {
-		padding-right: 5px;
-	}
 	.header .navbar-toggler {
 		border: none;
 		box-shadow: none;
@@ -465,16 +463,15 @@ a {
 	.header .navbar-toggler i {
 		color: white;
 		font-size: 1.5em;
+		padding-right: 5px;
 	}
 	.header .navbar-nav {
 		background-color: rgb(0, 0, 0, 0.75);
 		margin-top: 10px;
 	}
-	.header .nav-item {
-		padding-right: 25px;
-	}
 	.header .rrss {
-		display: none;
+		border-top: solid 1px white;
+		border-left: none;
 	}
 
 	.seccion {
