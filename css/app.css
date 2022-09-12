@@ -47,7 +47,7 @@ a {
 }
 
 
-/*HEADER */
+/*HEADER*/
 .header {
 	width: 100%;
 	position: fixed;
@@ -72,7 +72,6 @@ a {
 }
 .header .nav-item {
 	padding-right: 25px;
-
 }
 .header .nav-link {
 	font-family: 'Sarpanch', sans-serif;
@@ -217,8 +216,6 @@ a {
 	font-family: "FontAwesome";
 	line-height: 40px;
 	color: white;
-	width: 40px;
-	height: 40px;
 	margin-top: 15px;
 	transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
 }
